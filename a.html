@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 适配 Tableau 嵌入环境，避免缩放异常 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>化妆品数据说明</title>
+    <style>
+        /* 统一样式，适配 Tableau 背景 */
+        body {
+            margin: 0;
+            padding: 12px;
+            font-family: "微软雅黑", "Microsoft YaHei", sans-serif;
+            background-color: transparent; /* 透明背景，融入 Tableau 仪表板 */
+            color: #333333; /* 深灰文字，提升可读性 */
+            line-height: 1.5; /* 行高优化，避免文字拥挤 */
+        }
+        /* 标题样式 */
+        .data-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0 0 8px 0;
+            color: #5D4037; /* 棕色调，贴合化妆品主题 */
+            border-bottom: 1px solid #F0F0F0; /* 下划线分隔，增强层次感 */
+            padding-bottom: 5px;
+        }
+        /* 列表样式 */
+        .data-list {
+            font-size: 12px;
+            margin: 0;
+            padding-left: 20px; /* 列表缩进，排版更整齐 */
+        }
+        .data-list li {
+            margin-bottom: 4px; /* 列表项间距，避免拥挤 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 数据说明容器 -->
+    <div class="data-container">
+        <h3 class="data-title">数据说明</h3>
+        <ul class="data-list">
+            <li>数据来源：2024年化妆品销售台账（含线上电商、线下门店）</li>
+            <li>统计维度：商品品类（口红/面霜/粉底液等）、销售区域（北区/东区/南区/西区）、月度周期</li>
+            <li>核心指标：销售额（万元）、销量（件）、客单价（元/单）</li>
+            <li>更新频率：每月1日更新上月数据，确保时效性</li>
+            <li>数据备注：剔除退货、赠品订单，统计口径为“实际成交数据”</li>
+        </ul>
+    </div>
+</body>
+</html>
